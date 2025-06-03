@@ -1,0 +1,383 @@
+{
+	"info": {
+		"_postman_id": "cb5c3d79-9802-4e24-862f-85ee469565d4",
+		"name": "Homework",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44764791",
+		"_collection_link": "https://elen-9848466.postman.co/workspace/Elen's-Workspace~ac177ab6-dc01-4b20-8ef8-66ca0e3636fb/collection/44764791-cb5c3d79-9802-4e24-862f-85ee469565d4?action=share&source=collection_link&creator=44764791"
+	},
+	"item": [
+		{
+			"name": "All methods",
+			"item": [
+				{
+					"name": "Register user",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{autorization}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "x-api-key",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/api/user",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Update user",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "reqres-free-v1",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "x-api-key",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"morpheus\",\r\n    \"job\": \"zion resident\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/api/users/2",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH Update user",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "reqres-free-v1",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "x-api-key",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": {{$randomFirstName}},\r\n    \"job\": {{$randomJobTitle}}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/api/users/2",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://reqres.in/api/users/2",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "reqres-free-v1",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "x-api-key",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://reqres.in/api/users/2",
+							"protocol": "https",
+							"host": [
+								"reqres",
+								"in"
+							],
+							"path": [
+								"api",
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GET single user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "reqres-free-v1",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-api-key",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/api/users/2",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://www.google.com/complete/search?q&cp=0&client=gws-wiz-serp&xssi=t&gs_pcrt=2&hl=en-AM&authuser=0&pq=goris&psi=DbkbaJmSBOKJ7NYPmOfKgQs.1746647310043&dpr=1.5",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "downlink",
+						"value": "10"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://www.google.com/"
+					},
+					{
+						"key": "rtt",
+						"value": "100"
+					},
+					{
+						"key": "sec-ch-prefers-color-scheme",
+						"value": "light"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"135\", \"Not-A.Brand\";v=\"8\", \"Chromium\";v=\"135\""
+					},
+					{
+						"key": "sec-ch-ua-arch",
+						"value": "\"x86\""
+					},
+					{
+						"key": "sec-ch-ua-bitness",
+						"value": "\"64\""
+					},
+					{
+						"key": "sec-ch-ua-form-factors",
+						"value": "\"Desktop\""
+					},
+					{
+						"key": "sec-ch-ua-full-version",
+						"value": "\"135.0.7049.116\""
+					},
+					{
+						"key": "sec-ch-ua-full-version-list",
+						"value": "\"Google Chrome\";v=\"135.0.7049.116\", \"Not-A.Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"135.0.7049.116\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-model",
+						"value": "\"\""
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-ch-ua-platform-version",
+						"value": "\"10.0.0\""
+					},
+					{
+						"key": "sec-ch-ua-wow64",
+						"value": "?0"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "x-client-data",
+						"value": "CKO1yQEIkbbJAQijtskBCKmdygEIrfrKAQiSocsBCJKjywEIhaDNAQjv7M4BCIftzgEI5O3OAQ=="
+					},
+					{
+						"key": "Cookie",
+						"value": "SID=g.a000vwjjRDMOe4aiKocsB51I2y_lhlJM7zmlymIvOmzaCwX7hZJN_BcCkNCXsYgRdSuXG4-iDAACgYKAR8SARMSFQHGX2Mi6l8nxVh4yUAK6QQk6-9S-BoVAUF8yKq24TLlxD65jaC1nXatBVgW0076; __Secure-1PSID=g.a000vwjjRDMOe4aiKocsB51I2y_lhlJM7zmlymIvOmzaCwX7hZJNwEYDagWz3kMmWX5em9uxRQACgYKAfASARMSFQHGX2Mino_XhaRk_V0kZ3U-bAzhghoVAUF8yKp6HfO_vwF3gQYx5CZTLkHz0076; __Secure-3PSID=g.a000vwjjRDMOe4aiKocsB51I2y_lhlJM7zmlymIvOmzaCwX7hZJNRs_ZqT-6NJhmglOzOvCn7AACgYKARcSARMSFQHGX2Miu-QfwZa40HobHz0iXfmWxxoVAUF8yKo8yps3XErU1ujJPxG05dRI0076; HSID=ACowYjiab4vs1n7w3; SSID=ASLGDg060-MBfJzV1; APISID=9esjh5_hbSQgdFGI/AW4egk9O3sQ5nqWF8; SAPISID=MOd6fCZocg9dMGm3/ALGBOIsmZYHDWlLly; __Secure-1PAPISID=MOd6fCZocg9dMGm3/ALGBOIsmZYHDWlLly; __Secure-3PAPISID=MOd6fCZocg9dMGm3/ALGBOIsmZYHDWlLly; SEARCH_SAMESITE=CgQI7Z0B; AEC=AVcja2eUwbXU9Z5HE9dtyLyS7-WJxsQox9XbTx9GNoIBhlcYRXVdq5n2yA; NID=523=eEYZ7kOZwiRJlpHnbcxuU3spREoS6-8nA2B-bEH0O1znf2ectYx-6vXKZQrgQJMcTYH-zLN44DrwlButaq74LH3QkZ-SqeK3HIuGLcLwHX4vwnkNY15b6X39Ni_EMzeRZuTFIFBY1AtMFmV767-3IfLjHWH7weiaK1FQG2pdzbKhWhyhCfBXW9bf5RoqyRAalhQdYUMfXAP0vVXge_AMyK9JTMXmCcJfOs6XCORIKLUWs-E7AhdewZUDV33GSnRTnx02lnj-D9qumhprNLbsaA4Fai4smL7psLl_4hSfUSW6RNuVLp_36-8aWH7J3NtN0qkHySOJewBi-gLTkvYs0KF49X-catkFulpsJuwGuX8RpQd89KVCv3BlDwVvBLk4Kct5_vEButnb2-TmNnDEwPTtlEsW7NAz6KMHBDUv_BK_24xqKmvsNlCdz4IMkXPlrZ132hKgIJOTPXABCDyVZJrueSFaxemdz2xYXQDy; __Secure-1PSIDTS=sidts-CjIBjplskARK9S8MOaLHRdKllJLOeQkoePVPp5mzbo_-lJ0jzb_ptK6QykSCqwpQ5bV4exAA; __Secure-3PSIDTS=sidts-CjIBjplskARK9S8MOaLHRdKllJLOeQkoePVPp5mzbo_-lJ0jzb_ptK6QykSCqwpQ5bV4exAA; DV=A3dE_K2EqlNhIBy4P1MyROsQhqvEapkWo6JO-3KoXQIAAPBT9pSNmCvKtgAAAICIXxvmwpdnMwAAAErhKiiL06ABEAAAQOzyESqduvVIBAAAAA; SIDCC=AKEyXzWTHJzSk6kTvfh6OAI3QE_bfqwMVSdBsBCBYSgpUqC9t3rofIhx7pHT3YIy5KTH4eW4Eww; __Secure-1PSIDCC=AKEyXzXmFEnkbY1DFj5zses0_KTQdmCyxcQE9ngjys9mjy2BHdoqnHMRvU108YJfkw3TRuXh6Xg; __Secure-3PSIDCC=AKEyXzXyx1D5ZwpNTdZeVSQVxO4AZWjRC6tOeQ2bXNtS-0GFPlWroV-0iiyg6ZDinXCKBPshuqn_"
+					}
+				],
+				"url": {
+					"raw": "https://www.google.com/complete/search?q&cp=0&client=gws-wiz-serp&xssi=t&gs_pcrt=2&hl=en-AM&authuser=0&pq=erevan=DbkbaJmSBOKJ7NYPmOfKgQs.1746647310043&dpr=1.5",
+					"protocol": "https",
+					"host": [
+						"www",
+						"google",
+						"com"
+					],
+					"path": [
+						"complete",
+						"search"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": null
+						},
+						{
+							"key": "cp",
+							"value": "0"
+						},
+						{
+							"key": "client",
+							"value": "gws-wiz-serp"
+						},
+						{
+							"key": "xssi",
+							"value": "t"
+						},
+						{
+							"key": "gs_pcrt",
+							"value": "2"
+						},
+						{
+							"key": "hl",
+							"value": "en-AM"
+						},
+						{
+							"key": "authuser",
+							"value": "0"
+						},
+						{
+							"key": "pq",
+							"value": "erevan=DbkbaJmSBOKJ7NYPmOfKgQs.1746647310043"
+						},
+						{
+							"key": "dpr",
+							"value": "1.5"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl 'https://www.google.com/complete/search?q&cp=0&client=gws-wiz-serp&xssi=t&gs_pcrt=2&hl=en-AM&authuser=0&pq=goris&psi=DbkbaJmSBOKJ7NYPmOfKgQs.1746647310043&dpr=1.5' \\\r\n  -H 'accept: */*' \\\r\n  -H 'accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7' \\\r\n  -b 'SID=g.a000vwjjRDMOe4aiKocsB51I2y_lhlJM7zmlymIvOmzaCwX7hZJN_BcCkNCXsYgRdSuXG4-iDAACgYKAR8SARMSFQHGX2Mi6l8nxVh4yUAK6QQk6-9S-BoVAUF8yKq24TLlxD65jaC1nXatBVgW0076; __Secure-1PSID=g.a000vwjjRDMOe4aiKocsB51I2y_lhlJM7zmlymIvOmzaCwX7hZJNwEYDagWz3kMmWX5em9uxRQACgYKAfASARMSFQHGX2Mino_XhaRk_V0kZ3U-bAzhghoVAUF8yKp6HfO_vwF3gQYx5CZTLkHz0076; __Secure-3PSID=g.a000vwjjRDMOe4aiKocsB51I2y_lhlJM7zmlymIvOmzaCwX7hZJNRs_ZqT-6NJhmglOzOvCn7AACgYKARcSARMSFQHGX2Miu-QfwZa40HobHz0iXfmWxxoVAUF8yKo8yps3XErU1ujJPxG05dRI0076; HSID=ACowYjiab4vs1n7w3; SSID=ASLGDg060-MBfJzV1; APISID=9esjh5_hbSQgdFGI/AW4egk9O3sQ5nqWF8; SAPISID=MOd6fCZocg9dMGm3/ALGBOIsmZYHDWlLly; __Secure-1PAPISID=MOd6fCZocg9dMGm3/ALGBOIsmZYHDWlLly; __Secure-3PAPISID=MOd6fCZocg9dMGm3/ALGBOIsmZYHDWlLly; SEARCH_SAMESITE=CgQI7Z0B; AEC=AVcja2eUwbXU9Z5HE9dtyLyS7-WJxsQox9XbTx9GNoIBhlcYRXVdq5n2yA; NID=523=eEYZ7kOZwiRJlpHnbcxuU3spREoS6-8nA2B-bEH0O1znf2ectYx-6vXKZQrgQJMcTYH-zLN44DrwlButaq74LH3QkZ-SqeK3HIuGLcLwHX4vwnkNY15b6X39Ni_EMzeRZuTFIFBY1AtMFmV767-3IfLjHWH7weiaK1FQG2pdzbKhWhyhCfBXW9bf5RoqyRAalhQdYUMfXAP0vVXge_AMyK9JTMXmCcJfOs6XCORIKLUWs-E7AhdewZUDV33GSnRTnx02lnj-D9qumhprNLbsaA4Fai4smL7psLl_4hSfUSW6RNuVLp_36-8aWH7J3NtN0qkHySOJewBi-gLTkvYs0KF49X-catkFulpsJuwGuX8RpQd89KVCv3BlDwVvBLk4Kct5_vEButnb2-TmNnDEwPTtlEsW7NAz6KMHBDUv_BK_24xqKmvsNlCdz4IMkXPlrZ132hKgIJOTPXABCDyVZJrueSFaxemdz2xYXQDy; __Secure-1PSIDTS=sidts-CjIBjplskARK9S8MOaLHRdKllJLOeQkoePVPp5mzbo_-lJ0jzb_ptK6QykSCqwpQ5bV4exAA; __Secure-3PSIDTS=sidts-CjIBjplskARK9S8MOaLHRdKllJLOeQkoePVPp5mzbo_-lJ0jzb_ptK6QykSCqwpQ5bV4exAA; DV=A3dE_K2EqlNhIBy4P1MyROsQhqvEapkWo6JO-3KoXQIAAPBT9pSNmCvKtgAAAICIXxvmwpdnMwAAAErhKiiL06ABEAAAQOzyESqduvVIBAAAAA; SIDCC=AKEyXzWTHJzSk6kTvfh6OAI3QE_bfqwMVSdBsBCBYSgpUqC9t3rofIhx7pHT3YIy5KTH4eW4Eww; __Secure-1PSIDCC=AKEyXzXmFEnkbY1DFj5zses0_KTQdmCyxcQE9ngjys9mjy2BHdoqnHMRvU108YJfkw3TRuXh6Xg; __Secure-3PSIDCC=AKEyXzXyx1D5ZwpNTdZeVSQVxO4AZWjRC6tOeQ2bXNtS-0GFPlWroV-0iiyg6ZDinXCKBPshuqn_' \\\r\n  -H 'downlink: 10' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://www.google.com/' \\\r\n  -H 'rtt: 100' \\\r\n  -H 'sec-ch-prefers-color-scheme: light' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"135\", \"Not-A.Brand\";v=\"8\", \"Chromium\";v=\"135\"' \\\r\n  -H 'sec-ch-ua-arch: \"x86\"' \\\r\n  -H 'sec-ch-ua-bitness: \"64\"' \\\r\n  -H 'sec-ch-ua-form-factors: \"Desktop\"' \\\r\n  -H 'sec-ch-ua-full-version: \"135.0.7049.116\"' \\\r\n  -H 'sec-ch-ua-full-version-list: \"Google Chrome\";v=\"135.0.7049.116\", \"Not-A.Brand\";v=\"8.0.0.0\", \"Chromium\";v=\"135.0.7049.116\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-model: \"\"' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-ch-ua-platform-version: \"10.0.0\"' \\\r\n  -H 'sec-ch-ua-wow64: ?0' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36' \\\r\n  -H 'x-client-data: CKO1yQEIkbbJAQijtskBCKmdygEIrfrKAQiSocsBCJKjywEIhaDNAQjv7M4BCIftzgEI5O3OAQ=='"
+			},
+			"response": []
+		}
+	]
+}
